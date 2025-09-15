@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Ti 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Fondo de corazones -->
+  <div class="hearts"></div>
+
+  <div class="container">
+    <header class="animar-entrada">
+      <h1>✨ Para Ti ✨</h1>
+      <p>Un rincón con tus cosas favoritas 💕</p>
+    </header>
+
+    <!-- Lista de categorías -->
+    <section class="favoritos animar-entrada">
+      <h2>🌟 Cosas que te gustan</h2>
+      <ul>
+        <li onclick="preguntar('peliculas')">🎬 Películas y Series</li>
+        <li onclick="preguntar('libros')">📚 Libros</li>
+        <li onclick="preguntar('colores')">🎨 Colores</li>
+        <li onclick="preguntar('comida')">🍣 Comida</li>
+        <li onclick="preguntar('anime')">🎌 Anime</li>
+      </ul>
+      <div id="info" class="info fade"></div>
+    </section>
+
+    <!-- Botón romántico -->
+    <section class="animar-entrada">
+      <button id="btnSecreto">💌 Toca aquí</button>
+      <p id="mensajeRomantico" style="display:none;">
+        🌹 Eres lo mejor que me pasó en la vida 🌹
+      </p>
+    </section>
+
+    <footer class="animar-entrada">
+      <p>💖 Hecho con cariño, solo para ti 💖</p>
+    </footer>
+  </div>
+
+  <!-- Popup dinámico -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h3 id="popup-pregunta"></h3>
+      <div id="popup-opciones" class="popup-buttons"></div>
+      <button onclick="cerrarPopup()" class="cerrar">✖</button>
+    </div>
+  </div>
+
+  <!-- Música -->
+  <audio id="musicaRomantica" src="musica_romantica.mp3"></audio>
+  <audio id="musicaEpica" src="musica_epica.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
