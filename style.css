@@ -1,0 +1,72 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Segoe UI", sans-serif;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  background: #ffd54f;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+button:hover {
+  transform: scale(1.05);
+}
+
+#messageBox {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Animaciones de entrada */
+.animar-entrada {
+  animation: fadeIn 1s ease forwards;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px);}
+  to   { opacity: 1; transform: translateY(0);}
+}
+
+/* Corazones y flores */
+.heart, .flower {
+  position: absolute;
+  top: -50px;
+  opacity: 0.9;
+  pointer-events: none;
+  animation: fall linear forwards;
+  z-index: 0;
+}
+
+.heart {
+  color: red;
+  text-shadow: 0 0 5px rgba(255,0,0,0.7);
+}
+
+.flower {
+  color: #ffcc00;
+  text-shadow: 0 0 5px rgba(255,200,0,0.7);
+}
+
+@keyframes fall {
+  0% { transform: translateY(0) rotate(0deg) scale(1); opacity: 1; }
+  100% { transform: translateY(100vh) rotate(360deg) scale(0.9); opacity: 0; }
+}
